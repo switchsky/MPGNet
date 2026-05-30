@@ -18,10 +18,6 @@ To address this gap, we proposed **MPGNet**, a multi-pattern and multi-period tr
 2. **Spatial Dependency Extraction:** A deep clustering module based on graph neural networks (GCN) is employed to extract mobility patterns from bus stop data.
 3. **Temporal Variation Modeling (STBlock):** We transform one-dimensional traffic flow data into two-dimensional space to explore the periodicity patterns of human mobility, capturing both intra-period and inter-period variations via multi-scale visual networks.
 
-## 🧠 Problem Definition
-
-Given a bus stop transportation network $\mathcal{G}_{s}^{dist}=(\mathcal{V}_{s},\mathcal{E}_{s}^{dist},A_{s}^{dist})$, the historical spatiotemporal graph flow feature matrix over the past $T_{h}$ steps is defined as $\mathbf{X}_{t-T_{h}+1:t} \in \mathbf{R}^{T_{h} \times N \times C}$. Our goal is to predict the future spatiotemporal graph flow feature matrix $\mathbf{X}_{t+1:t+T_{p}} \in \mathbf{R}^{T_{p} \times N \times C}$ for the next $T_{p}$ time steps.
-
 ## 📊 Main Results (Preview)
 
 Our model has been extensively evaluated on a real-world bus dataset from Jiangsu Panda Bus Company, demonstrating state-of-the-art performance against recent baselines.
@@ -60,7 +56,7 @@ If you have any questions about the methodology or wish to discuss related resea
 If you find our ideas or framework helpful for your research, please consider citing our work:
 
 ```bibtex
-@article{kong2026exploring,
+@article{tan2026exploring,
   title={Exploring Bus Stop Mobility Pattern with Temporal Variation: A Multi-Period Prediction Framework},
   author={Kong, Xiangjie and Tan, Haofei and Shen, Zhehui and Shen, Guojiang and Zhao, Xiangyu},
   journal={Under Review (IEEE Internet of Things Journal)},
